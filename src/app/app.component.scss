@@ -1,0 +1,159 @@
+.back{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff,rgb(162, 158, 163));
+}
+header{
+  width: 60%;
+  height: 400px;
+  background-color: #380A53;
+  position: relative;
+  bottom: 265px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px 20px 0 20px;
+
+  .title{
+    color: white;
+    text-align: center;
+    margin: 0 50px;
+
+    h1{
+      font-size: 50px;
+    }
+  }
+
+  a{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+
+    &:hover{
+      transform: scale(1.2);
+      text-shadow: 0 0 4px white;
+    }
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 120px;
+}
+
+.json-div, .csv-div{
+
+  p{
+    font-size: 20px;
+  }
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#convertBtn{
+  width: 125px;
+  height: 125px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+  background-color: #380A53;
+  color: white;
+  outline: 0;
+  border: 7px solid white;
+  transition-duration: 0.5s;
+
+  i{
+    font-size: 35px;
+  }
+
+  &:hover{
+    transform: scale(1.1);
+    background-color: #540d7e;
+  }
+
+  &:hover i{
+    animation-name: arrowAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+}
+
+#downloadBtn, #clearBtn, #copyBtn{
+  width: 125px;
+  height: 40px;
+  margin-bottom: 40px;
+  background-color: white;
+  outline: 0;
+  border: 3px solid black;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+#json-box, #csv-box{
+  border: 5px solid black;
+  outline: 0;
+  font-size: 20px;
+  resize: none;
+  padding: 5px;
+}
+
+.warning-div{
+  width: 125px;
+  height: 20px;
+  margin: 20px 0;
+
+  p{
+    color: red;
+    text-align: center;
+  }
+}
+
+.credits{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#credit{
+  font-size: 12px;
+}
+
+
+@keyframes arrowAnimation{
+
+  0%{
+    font-size: 35px;
+  }
+
+  50%{
+    transform: scale(1.5);
+  }
+
+  100%{
+    font-size: 35px;
+  }
+}
+
